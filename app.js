@@ -12,7 +12,10 @@ db.once('open', function () {
     console.log('👍');
 });
 
-app.use(cors({ origin: ['https://awesome-cori-70a96c.netlify.app']}))
+app.use(cors({
+    origin: ['https://awesome-cori-70a96c.netlify.app'],
+    credentials: true
+}))
 app.use(express.json())
 
 const statsSchema = new mongoose.Schema({

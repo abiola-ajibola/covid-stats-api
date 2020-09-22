@@ -13,7 +13,7 @@ db.once('open', function () {
 });
 
 app.use(cors({
-    origin: ['https://awesome-cori-70a96c.netlify.app'],
+    origin: ['https://awesome-cori-70a96c.netlify.app', "https://awesome-cori-70a96c.netlify.app/"],
     credentials: true
 }))
 app.use(express.json())

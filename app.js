@@ -2,7 +2,7 @@ const express = require('express')
 const fetch = require('node-fetch')
 const mongoose = require('mongoose')
 const cors = require('cors')
-require('dotenv').config()
+// require('dotenv').config()
 const app = express();
 const db = mongoose.connection;
 mongoose.connect(`${process.env.DB_HOST}`, { useNewUrlParser: true, useUnifiedTopology: true })

@@ -1,0 +1,1 @@
+This is th baxkend for a project that obtains stats from an api and caches it in a database.
